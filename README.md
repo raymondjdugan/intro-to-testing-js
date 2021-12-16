@@ -10,7 +10,7 @@ Additionally, we will be using a process called Test Driven Development, commonl
 ## Key Vocabulary
 <dl>
     <dt>Implementation</dt>
-    <dd>The code the a developer authors to realize the sequence of steps that the code runs to solve a problem (called an algorithm).</dd>    
+    <dd>The code a developer authors to realize the sequence of steps that the code runs to solve a problem (called an algorithm).</dd>    
     <dt>Refactor</dt>
     <dd>To refactor means to re-write an implementation. [Refactoring](https://martinfowler.com/bliki/DefinitionOfRefactoring.html) aims to increase the code quality without changing its observable behavior. Developers refactor code to increase readability, increase flexibility, add a fix for edge-case bugs, reduce duplication, or make the code more accessible for yourself and other developers moving forward.</dd>    
     <dt>Unit</dt>
