@@ -20,7 +20,7 @@ function isFive(number){
 
 // isEven function
 function isEven(coolNumber){
-    if(!isNaN(coolNumber) && typeof coolNumber !== 'boolean'){
+    if(!isNaN(coolNumber) && typeof coolNumber === 'number'){
         return coolNumber % 2 === 0;
     } else {
         return false;
@@ -47,8 +47,4 @@ function add(numX, numY) {
     numY = parseFloat(numY);
     return numX + numY;
 }
-
-
-
-
 
