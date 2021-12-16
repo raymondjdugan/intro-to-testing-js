@@ -18,9 +18,37 @@ function isFive(number){
     return number === 5;
 }
 
-// Function isEven
+// isEven function
 function isEven(coolNumber){
-    return coolNumber % 2 === 0;
+    if(!isNaN(coolNumber) && typeof coolNumber !== 'boolean'){
+        return coolNumber % 2 === 0;
+    } else {
+        return false;
+    }
+
 }
 
-console.log(typeof isEven());
+// Function isVowel
+function isVowel(stringLikeInput){
+    if(typeof stringLikeInput === 'string') {
+      stringLikeInput = stringLikeInput.toLowerCase();
+    }
+    switch(stringLikeInput) {
+        case 'a': case 'e': case 'i': case 'o': case 'u': case 'y':
+            return true;
+        default:
+            return false;
+    }
+}
+
+// add() function
+function add(numX, numY) {
+    numX = parseFloat(numX);
+    numY = parseFloat(numY);
+    return numX + numY;
+}
+
+
+
+
+

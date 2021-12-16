@@ -64,6 +64,7 @@ describe('isFive', function (){
     });
 });
 
+// Unit test for isEven
 describe('isEven', function (){
     it('should be a defined function', function () {
         expect(typeof isEven).toBe('function');
@@ -92,7 +93,74 @@ describe('isEven', function (){
     it('should return false when called with a boolean', function () {
         expect(isEven(true)).toBe(false);
     });
+    it('should return false when boolean', function () {
+        expect(isEven(false)).toBe(false);
+    });
     it('should return false when undefined', function () {
         expect(isEven()).toBe(false);
     });
 });
+
+// Unit test for isVowel
+describe('isVowel', function (){
+    it('should always return a boolean', function () {
+        expect(typeof isVowel()).toBe('boolean');
+    });
+    it('should return true when "a" is passed in', function () {
+        expect(isVowel('a')).toBe(true);
+    });
+    it('should return true when "A" is passed in', function () {
+        expect(isVowel('A')).toBe(true);
+    });
+    it('should return true when "y" is passed in', function () {
+        expect(isVowel('y')).toBe(true);
+    });
+    it('should return false when a number is passed in', function () {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false when the boolean true is passed in', function () {
+        expect(isVowel(true)).toBe(false);
+    });
+    it('should return false when the boolean false is passed in', function () {
+        expect(isVowel(false)).toBe(false);
+    });
+    it('should return false when a string is passed in', function () {
+        expect(isVowel('banana')).toBe(false);
+    });
+    it('should return false when undefined', function () {
+        expect(isVowel()).toBe(false);
+    });
+});
+
+// Unit test for
+describe('add', function (){
+    it('should return 5 when 2 and 3 are passed in', function () {
+        expect(add(2, 3)).toBe(5);
+    });
+    it('should return -12 when 33 and -9 are passed in', function () {
+        expect(add(-3, -9)).toBe(-12)
+    });
+    it('should return 11 when string "5" and number 6 are passed in', function () {
+        expect(add("5", 6)).toBe(11);
+    });
+    it('should return NaN when a 2 string literals are passed in', function () {
+        expect(add('banana', 'split')).toBeNaN();
+    });
+    it('should return NaN when a number and a string literal is passed in', function () {
+        expect(add(2, 'apples')).toBeNaN();
+    });
+    it('should return NaN when undefined', function () {
+        expect(add()).toBeNaN();
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
